@@ -82,6 +82,15 @@ blocks:
           fetch_version: false
         background: "#FEAC19"
         foreground: "#ffffff"
+      - type: kubectl
+        style: powerline
+        powerline_symbol: 
+        foreground: "#000000"
+        background: "#ebcc34"
+        template: " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} "
+        properties:
+          context_aliases:
+            arn:aws:eks:eu-west-1:1234567890:cluster/posh: posh
       - type: aws
         style: powerline
         powerline_symbol: 
